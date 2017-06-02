@@ -22,13 +22,13 @@ RUN apt-get install -y python python-dev python-distribute python-pip
 RUN git clone https://github.com/Xav-Deb/env-generator.git
 
 # Get pip to download and install requirements:
-RUN pip install -r /my_application/requirements.txt
+RUN pip install -r /env-generator/requirements.txt
 
 # Expose ports
 EXPOSE 80
 
 # Set the default directory where CMD will execute
-WORKDIR /my_application
+WORKDIR /env-generator
 
 # Set the default command to execute
 # when creating a new container
