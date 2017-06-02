@@ -19,8 +19,6 @@ RUN apt-get install -y tar git curl nano wget dialog net-tools build-essential
 RUN apt-get install -y python python-dev python-distribute python-pip
 
 # Copy the application folder inside the container
-ADD /my_application /my_application
-
 RUN git clone https://github.com/Xav-Deb/env-generator.git
 
 # Get pip to download and install requirements:
